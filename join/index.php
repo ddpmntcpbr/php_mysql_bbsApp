@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if(!empty($_POST)){
 	if ($_POST['name']===''){
 		$error['name'] = 'blank';
@@ -12,11 +14,28 @@ if(!empty($_POST)){
 	if ($_POST['password']===''){
 		$error['password'] = 'blank';
 	}
-	
+
+	$fileName = $_FILES['image']['name'];
+	if (!empty($fileName)){
+		$ext = substr($fileName, -3);
+		if($ext != 'jpg' && $ext != 'gif' && $ext != 'png'){
+			$error['image'] = 'type';
+		}
+	}
+
 	if (empty($error)){
+		$image = date('YmdHis').$_FILES['image']['name'];
+		move_uploaded_file($_FILES['image']['tmp_name'], '../member_picture/'.$image);
+
+		$_SESSION['join'] = $_POST;
+		$_SESSION['join']['image'] = $image;
 		header('Location: check.php');
 		exit();
 	}
+}
+
+if($_REQUEST['action']==='rewrite' && isset($_SESSION['join'])){
+	$_POST = $_SESSION['join'];
 }
 ?>
 
@@ -65,7 +84,13 @@ if(!empty($_POST)){
         </dd>
 		<dt>写真など</dt>
 		<dd>
-        	<input type="file" name="image" size="35" value="test"  />
+					<input type="file" name="image" size="35" value="test"  />
+					<?php if($error['image']==='type'): ?>
+					<p class="error">* 拡張子が「.jpg」または「.gif」、「.png」の画像ファイルを指定してください</p>
+					<?php endif; ?>
+					<?php if(!empty($error)): ?>
+					<p class="error">恐れ入りますが、画像を改めて指定してください</p>
+					<?php endif ?>
         </dd>
 	</dl>
 	<div><input type="submit" value="入力内容を確認する" /></div>
