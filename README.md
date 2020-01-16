@@ -11,16 +11,12 @@ https://php-mysql-bbs-app.herokuapp.com/login.php
 
 ## 詳細
 - 登録ユーザーがコメントを投稿、返信し合えるSNSアプリです。
-- アプリの雛形は下記を参照
- - 『PHP+MtSQL(MariaDB) Webサーバーサイドプログラミング入門』(https://www.udemy.com/course/php7basic/)
-- 本番環境の構築は下記qiita記事を参照
- - 『PHPで作ったWebサービスをHerokuでデプロイするまでの手順書』(https://qiita.com/ak25562983/items/c6bd1ec88e06a1f7f954)
+- アプリの雛形は『PHP+MtSQL(MariaDB) Webサーバーサイドプログラミング入門』(https://www.udemy.com/course/php7basic/)を参照
+- 本番環境の構築は、『PHPで作ったWebサービスをHerokuでデプロイするまでの手順書』(https://qiita.com/ak25562983/items/c6bd1ec88e06a1f7f954)を参照
 
 ## 技術内容
 - 言語:PHP
-- DB:MySQL
- - 開発環境:MariaDB
- - 本番環境:ClearDB
+- DB:MySQL（開発環境:MariaDB、本番環境:ClearDB）
 - バージョン管理:Git
 - インフラ:Heroku
 
