@@ -1,8 +1,7 @@
-## 説明動画
+## 説明動画(再生時間：1分)
 https://www.youtube.com/watch?v=qBvS3Ilp_3o
 
-サイト概要・使用技術を説明した動画になります。
-再生時間は1分程度です。
+サイトの概要、使用した技術を説明した動画になります。
 
 ## サイトURL
 https://php-mysql-bbs-app.herokuapp.com/login.php
