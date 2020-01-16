@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('dbconnect.php');
+$db = dbConnect();
 
 if ($_COOKIE['email'] !== ''){
   $email = $_COOKIE['email'];

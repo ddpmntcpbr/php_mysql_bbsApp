@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('../dbconnect.php');
+$db = dbConnect();
 
 if(!empty($_POST)){
 	if ($_POST['name']===''){

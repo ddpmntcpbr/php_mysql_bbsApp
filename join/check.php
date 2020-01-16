@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('../dbconnect.php');
+$db = dbConnect();
 
 if(!isset($_SESSION['join'])){
 	header('Loction: index.php');
