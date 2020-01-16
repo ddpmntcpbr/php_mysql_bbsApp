@@ -26,13 +26,13 @@ body {
 }
 
 #head {
+
 	border-left: 1px solid #d4d4d4;
 	border-right: 1px solid #d4d4d4;
 	border-bottom: 1px solid #d4d4d4;
 	background: url(images/bg_head.png) bottom left repeat-x #106eb7;
 	color: #fff;
 	padding: 20px;
-	margin-bottom: 20px;
 }
 
 h1 {
@@ -48,12 +48,11 @@ h2 {
 }
 
 #content {
-	padding: 20px;
+	padding: 20px 20px 30px 20px;
 	background: url(images/bg_content.png) left bottom no-repeat #ecf7fc;
 	width: 720px;
 	min-height: 490px;
 	margin: 0 auto;
-	margin-bottom: 10px;
 	font-size: 153.9%;
 }
 
@@ -84,11 +83,6 @@ dd {
 	font-size: 90%;
 	padding: 2px;
 	margin-left: 10px;
-}
-
-#foot {
-	width: 780px;
-	text-align: right;
 }
 
 th, td {
@@ -142,4 +136,24 @@ li {
 .msg .day a {
 	font-size: 80%;
 	color: #999;
+}
+
+#foot {
+	padding: 10px;
+	text-align:left;
+	font-weight:bold;
+	background-color: #808080;
+	color: #FFF;
+	display:flex;
+	flex-direction: row;
+}
+
+.footer-title {
+	font-size:24px;
+	
+}
+
+.footer-content {
+	margin-left:20px;
+	font-size:24px;
 }

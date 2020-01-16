@@ -109,6 +109,7 @@ if($_REQUEST['action']==='rewrite' && isset($_SESSION['join'])){
 	</dl>
 	<div><input type="submit" value="入力内容を確認する" /></div>
 </form>
+<?php include('footer.php'); ?>
 </div>
 </body>
 </html>

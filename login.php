@@ -41,16 +41,20 @@ if (!empty($_POST)){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<title>ログインする</title>
+<title>ログイン</title>
 </head>
 
 <body>
 <div id="wrap">
   <div id="head">
-    <h1>ログインする</h1>
+    <h1>ログイン画面</h1>
   </div>
   <div id="content">
     <div id="lead">
+
+      <p style="font-size:24px; font-weight:bold;">ゲスト用ID:guest@example.org</p>
+      <p style="font-size:24px; font-weight:bold;"> ゲスト用PW:1111</p>
+
       <p>メールアドレスとパスワードを記入してログインしてください。</p>
       <p>入会手続きがまだの方はこちらからどうぞ。</p>
       <p>&raquo;<a href="join/">入会手続きをする</a></p>
@@ -82,9 +86,8 @@ if (!empty($_POST)){
       </div>
     </form>
   </div>
-  <div id="foot">
-    <p><img src="images/txt_copyright.png" width="136" height="15" alt="(C) H2O Space. MYCOM" /></p>
-  </div>
+
+<?php include('footer.php'); ?>
 </div>
 </body>
 </html>

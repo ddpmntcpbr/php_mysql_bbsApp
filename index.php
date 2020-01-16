@@ -61,7 +61,7 @@ if(isset($_REQUEST['res'])){
 
 <div id="wrap">
   <div id="head">
-    <h1>ひとこと掲示板</h1>
+    <h1>コメント一覧</h1>
   </div>
   <div id="content">
   	<div style="text-align: right"><a href="logout.php">ログアウト</a></div>
@@ -114,6 +114,7 @@ if(isset($_REQUEST['res'])){
 <?php endif; ?>
 </ul>
   </div>
+  <?php include('footer.php'); ?>
 </div>
 </body>
 </html>

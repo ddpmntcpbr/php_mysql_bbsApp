@@ -42,6 +42,7 @@ $posts->execute(array($_REQUEST['id']));
     <p>その投稿は削除されたか、URLが間違えています</p>
   <?php endif; ?>
   </div>
+  <?php include('footer.php'); ?>
 </div>
 </body>
 </html>
