@@ -1,8 +1,8 @@
-## URL
+## 紹介動画(再生時間:1分)
+https://www.youtube.com/watch?v=qBvS3Ilp_3o
+
+## サイトURL
 https://php-mysql-bbs-app.herokuapp.com/login.php
-
-## サイト紹介動画(1分)
-
 
 ## コンセプト
 - PHP & MySQLを使用したSNSライクアプリ
