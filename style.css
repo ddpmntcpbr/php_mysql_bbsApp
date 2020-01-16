@@ -48,10 +48,10 @@ h2 {
 }
 
 #content {
-	padding: 20px 20px 30px 20px;
+	padding: 20px 0;
 	background: url(images/bg_content.png) left bottom no-repeat #ecf7fc;
 	width: 720px;
-	min-height: 490px;
+	min-height: 550px;
 	margin: 0 auto;
 	font-size: 153.9%;
 }

@@ -51,13 +51,15 @@ if (!empty($_POST)){
   </div>
   <div id="content">
     <div id="lead">
-
-      <p style="font-size:24px; font-weight:bold;">ゲスト用ID:guest@example.org</p>
-      <p style="font-size:24px; font-weight:bold;"> ゲスト用PW:1111</p>
-
-      <p>メールアドレスとパスワードを記入してログインしてください。</p>
-      <p>入会手続きがまだの方はこちらからどうぞ。</p>
-      <p>&raquo;<a href="join/">入会手続きをする</a></p>
+      <div class="guest-info">
+        <p style="font-size:24px; font-weight:bold;">ゲスト用ID:guest@example.org</p>
+        <p style="font-size:24px; font-weight:bold;"> ゲスト用PW:1111</p>
+      </div>
+      <div class="info">
+        <p>メールアドレスとパスワードを記入してログインしてください。</p>
+        <p>入会手続きがまだの方はこちらからどうぞ。</p>
+        <p>&raquo;<a href="join/">入会手続きをする</a></p>
+      </div>
     </div>
     <form action="" method="post">
       <dl>
