@@ -1,7 +1,8 @@
-## 紹介動画
+## 説明動画
 https://www.youtube.com/watch?v=qBvS3Ilp_3o
 
-1分程度ですので、ぜひご覧ください
+サイト概要・使用技術を説明した動画になります。
+再生時間は1分程度です。
 
 ## サイトURL
 https://php-mysql-bbs-app.herokuapp.com/login.php
