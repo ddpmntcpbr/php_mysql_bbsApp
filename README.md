@@ -11,7 +11,7 @@ PHP&MySQLを使用したSNSライクアプリ
 
 ## 技術スタック
 - PHP
-- MySQL
+- MySQL(MariaDB)
 
 ## 実装した機能
 - ログイン機能
